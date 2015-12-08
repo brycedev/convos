@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>      
+	    
+	    <!-- PINNED CONVERSATIONS -->
+	
+		<dict>
+			<key>cell</key><string>PSGroupCell</string>
+			<key>label</key><string>Pinned Conversations</string>
+            <key>footerText</key><string>Hold a conversation to pin/unpin it. Pinned conversations can not be deleted and will remain at the top.</string>
+		</dict>
+		<dict>
+			<key>cell</key><string>PSSwitchCell</string>
+			<key>default</key><true/>
+			<key>defaults</key><string>com.brycedev.convos</string>
+			<key>key</key><string>kPinConvos</string>
+			<key>label</key><string>Enable</string>
+			<key>PostNotification</key><string>com.brycedev.convos/prefsChanged</string>
+		</dict>
+		<dict>
+			<key>cell</key><string>PSSwitchCell</string>
+			<key>default</key><false/>
+			<key>defaults</key><string>com.brycedev.convos</string>
+			<key>key</key><string>kUseCustomPinnedText</string>
+			<key>label</key><string>Custom Pinned Text</string>
+			<key>PostNotification</key><string>com.brycedev.convos/prefsChanged</string>
+		</dict>
+		<dict>
+            <key>cell</key><string>PSEditTextCell</string>
+            <key>defaults</key><string>com.brycedev.convos</string>
+            <key>placeholder</key><string>PINNED</string>
+            <key>isDecimalPad</key><false/>
+            <key>key</key><string>kCustomPinnedText</string>
+            <key>label</key><string>Text : </string>
+            <key>PostNotification</key><string>com.brycedev.convos/prefsChanged</string>
+        </dict>
+		
+		<!-- UNREAD CONVERSATIONS -->
+	
+		<dict>
+			<key>cell</key><string>PSGroupCell</string>
+			<key>label</key><string>Mark Messages</string>
+            <key>footerText</key><string>Swipe to the right to mark a message read/unread.</string>
+		</dict>
+		<dict>
+			<key>cell</key><string>PSSwitchCell</string>
+			<key>default</key><true/>
+			<key>defaults</key><string>com.brycedev.convos</string>
+			<key>key</key><string>kMarkMessages</string>
+			<key>label</key><string>Enable</string>
+			<key>PostNotification</key><string>com.brycedev.convos/prefsChanged</string>
+		</dict>
+		
+		<!-- SORT CONVERSATIONS -->
+	
+		<dict>
+			<key>cell</key><string>PSGroupCell</string>
+			<key>label</key><string>Sort Alphabetically</string>
+            <key>footerText</key><string>Sort conversations alphabetically instead of by timestamp (after pinned conversations).</string>
+		</dict>
+		<dict>
+			<key>cell</key><string>PSSwitchCell</string>
+			<key>default</key><false/>
+			<key>defaults</key><string>com.brycedev.convos</string>
+			<key>key</key><string>kSortConvosAlphabetically</string>
+			<key>label</key><string>Enable</string>
+			<key>PostNotification</key><string>com.brycedev.convos/prefsChanged</string>
+		</dict>
+		
+		<!-- PRECISE TIMESTAMPS -->
+	
+		<dict>
+			<key>cell</key><string>PSGroupCell</string>
+			<key>label</key><string>Precise Timestamps</string>
+            <key>footerText</key><string>Display natural, time ago timestamps. Experimental.</string>
+		</dict>
+		<dict>
+			<key>cell</key><string>PSSwitchCell</string>
+			<key>default</key><false/>
+			<key>defaults</key><string>com.brycedev.convos</string>
+			<key>key</key><string>kShowPreciseTimestamps</string>
+			<key>label</key><string>Enable</string>
+			<key>PostNotification</key><string>com.brycedev.convos/prefsChanged</string>
+		</dict>
+		
+		<!-- LOAD MORE CONVERSATIONS -->
+	
+		<dict>
+			<key>cell</key><string>PSGroupCell</string>
+			<key>label</key><string>Load More Conversations</string>
+            <key>footerText</key><string >Auto load a significant number of messages. Prevents the need to continuously swipe to load more.</string>
+		</dict>
+		<dict>
+			<key>cell</key><string>PSSwitchCell</string>
+			<key>default</key><false/>
+			<key>defaults</key><string>com.brycedev.convos</string>
+			<key>key</key><string>kLoadMoreMessages</string>
+			<key>label</key><string>Enable</string>
+			<key>PostNotification</key><string>com.brycedev.convos/prefsChanged</string>
+		</dict>
+		
+		<!-- MASK CONVERSATIONS -->
+	
+		<dict>
+			<key>cell</key><string>PSGroupCell</string>
+			<key>label</key><string>Name Masking Mode</string>
+            <key>footerText</key><string >Mask the names in your conversations. Useful for sharing screenshots with personal info.</string>
+		</dict>
+		<dict>
+			<key>cell</key><string>PSSwitchCell</string>
+			<key>default</key><false/>
+			<key>defaults</key><string>com.brycedev.convos</string>
+			<key>key</key><string>kMaskNames</string>
+			<key>label</key><string>Enable</string>
+			<key>PostNotification</key><string>com.brycedev.convos/prefsChanged</string>
+		</dict>
+	</array>
+	<key>title</key>
+	<string>Conversation Options</string>
+</dict>
+</plist>

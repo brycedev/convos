@@ -1,0 +1,9 @@
+Package: com.brycedev.convos
+Name: Convos
+Depends: mobilesubstrate, org.thebigboss.libcolorpicker (>= 1.2) , firmware (>= 8.0)
+Version: 1.0
+Architecture: iphoneos-arm
+Description: Add powerful features to the Messages app and make the conversation list more aesthetically pleasing.
+Maintainer: Bryce Jackson
+Author: Bryce Jackson
+Section: Tweaks

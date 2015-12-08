@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>      
+	    <!-- HIDDEN ELEMENTS -->
+	
+		<dict>
+			<key>cell</key><string>PSGroupCell</string>
+			<key>label</key><string>Hide Elements</string>
+            <key>footerText</key><string>Require relaunch of Messages app.</string>
+		</dict>
+		<dict>
+			<key>cell</key><string>PSSwitchCell</string>
+			<key>default</key><false/>
+			<key>defaults</key><string>com.brycedev.convos</string>
+			<key>key</key><string>kHideSeparatorLines</string>
+			<key>label</key><string>Hide Separator Lines</string>
+			<key>PostNotification</key><string>com.brycedev.convos/prefsChanged</string>
+		</dict>
+		<dict>
+			<key>cell</key><string>PSSwitchCell</string>
+			<key>default</key><false/>
+			<key>defaults</key><string>com.brycedev.convos</string>
+			<key>key</key><string>kHideTapSelection</string>
+			<key>label</key><string>Hide Tap Selection Color</string>
+			<key>PostNotification</key><string>com.brycedev.convos/prefsChanged</string>
+		</dict>
+		<dict>
+			<key>cell</key><string>PSSwitchCell</string>
+			<key>default</key><false/>
+			<key>defaults</key><string>com.brycedev.convos</string>
+			<key>key</key><string>kRemoveLinkUnderline</string>
+			<key>label</key><string>Hide URL/Event Underlines</string>
+			<key>PostNotification</key><string>com.brycedev.convos/prefsChanged</string>
+		</dict>
+		<dict>
+			<key>cell</key><string>PSSwitchCell</string>
+			<key>default</key><false/>
+			<key>defaults</key><string>com.brycedev.convos</string>
+			<key>key</key><string>kRemoveChevron</string>
+			<key>label</key><string>Hide Chevrons</string>
+			<key>PostNotification</key><string>com.brycedev.convos/prefsChanged</string>
+		</dict>
+		
+		<!-- CELL SEPARATION HEIGHT -->
+		<dict>
+			<key>cell</key><string>PSGroupCell</string>
+			<key>label</key><string>Cell Spacing</string>
+            <key>footerText</key><string></string>
+		</dict>
+        <dict>
+			<key>cell</key><string>PSSwitchCell</string>
+			<key>default</key><false/>
+			<key>defaults</key><string>com.brycedev.convos</string>
+			<key>key</key><string>kUseCustomCellSpacing</string>
+			<key>label</key><string>Custom Cell Separation</string>
+			<key>PostNotification</key><string>com.brycedev.convos/prefsChanged</string>
+		</dict>
+		<dict>
+		    <key>cell</key><string>PSSliderCell</string>
+            <key>showValue</key><true/>
+            <key>default</key><real>10.0</real>
+            <key>defaults</key><string>com.brycedev.convos</string>
+			<key>key</key><string>kSeparationHeight</string>
+			<key>max</key><real>75.0</real>
+			<key>min</key><real>1.0</real>
+			<key>PostNotification</key><string>com.brycedev.convos/prefsChanged</string>
+		</dict>
+		
+		<!-- TABLE BACKGROUND COLOR -->
+		
+		<dict>
+			<key>cell</key><string>PSGroupCell</string>
+			<key>label</key><string>Table Background Color</string>
+            <key>footerText</key><string></string>
+		</dict>
+		<dict>
+			<key>cell</key><string>PSSwitchCell</string>
+			<key>default</key><false/>
+			<key>defaults</key><string>com.brycedev.convos</string>
+			<key>key</key><string>kUseCustomTableColor</string>
+			<key>label</key><string>Custom Table Color</string>
+			<key>PostNotification</key><string>com.brycedev.convos/prefsChanged</string>
+		</dict>
+		<dict>
+            <key>cell</key><string>PSLinkCell</string>
+            <key>cellClass</key><string>PFColorCell</string>
+            <key>label</key><string>Select Table Color</string>
+            <key>color_defaults</key><string>com.brycedev.convos</string>
+            <key>color_key</key><string>kTableBackgroundColor</string>
+            <key>title</key><string>Table Color</string>
+            <key>color_fallback</key><string>#000</string>
+            <key>usesRGB</key><true/>
+            <key>usesAlpha</key><false/>
+            <key>color_postNotification</key><string>com.brycedev.convos/prefsChanged</string>
+        </dict>
+		
+		<!-- SENDER LABEL -->
+		
+		<dict>
+			<key>cell</key><string>PSGroupCell</string>
+			<key>label</key><string>Sender Label</string>
+            <key>footerText</key><string></string>
+		</dict>
+		<dict>
+			<key>cell</key><string>PSSwitchCell</string>
+			<key>default</key><false/>
+			<key>defaults</key><string>com.brycedev.convos</string>
+			<key>key</key><string>kUseCustomSenderColor</string>
+			<key>label</key><string>Custom Sender Color</string>
+			<key>PostNotification</key><string>com.brycedev.convos/prefsChanged</string>
+		</dict>
+		<dict>
+            <key>cell</key><string>PSLinkCell</string>
+            <key>cellClass</key><string>PFColorCell</string>
+            <key>label</key><string>Select Sender Color</string>
+            <key>color_defaults</key><string>com.brycedev.convos</string>
+            <key>color_key</key><string>kSenderLabelColor</string>
+            <key>title</key><string>Sender Color</string>
+            <key>color_fallback</key><string>#000</string>
+            <key>usesRGB</key><true/>
+            <key>usesAlpha</key><false/>
+            <key>color_postNotification</key><string>com.brycedev.convos/prefsChanged</string>
+        </dict>
+		
+		<!-- SUMMARY LABEL -->
+		
+		<dict>
+			<key>cell</key><string>PSGroupCell</string>
+			<key>label</key><string>Summary Label</string>
+            <key>footerText</key><string></string>
+		</dict>
+		<dict>
+			<key>cell</key><string>PSSwitchCell</string>
+			<key>default</key><false/>
+			<key>defaults</key><string>com.brycedev.convos</string>
+			<key>key</key><string>kUseCustomSummaryColor</string>
+			<key>label</key><string>Custom Summary Color</string>
+			<key>PostNotification</key><string>com.brycedev.convos/prefsChanged</string>
+		</dict>
+		<dict>
+            <key>cell</key><string>PSLinkCell</string>
+            <key>cellClass</key><string>PFColorCell</string>
+            <key>label</key><string>Select Summary Color</string>
+            <key>color_defaults</key><string>com.brycedev.convos</string>
+            <key>color_key</key><string>kSummaryLabelColor</string>
+            <key>title</key><string>Summary Color</string>
+            <key>color_fallback</key><string>#000</string>
+            <key>usesRGB</key><true/>
+            <key>usesAlpha</key><false/>
+            <key>color_postNotification</key><string>com.brycedev.convos/prefsChanged</string>
+        </dict>
+		
+		<!-- DATE LABEL -->
+		
+		<dict>
+			<key>cell</key><string>PSGroupCell</string>
+			<key>label</key><string>Date Label</string>
+            <key>footerText</key><string></string>
+		</dict>
+		<dict>
+			<key>cell</key><string>PSSwitchCell</string>
+			<key>default</key><false/>
+			<key>defaults</key><string>com.brycedev.convos</string>
+			<key>key</key><string>kUseCustomDateColor</string>
+			<key>label</key><string>Custom Date Color</string>
+			<key>PostNotification</key><string>com.brycedev.convos/prefsChanged</string>
+		</dict>
+		<dict>
+            <key>cell</key><string>PSLinkCell</string>
+            <key>cellClass</key><string>PFColorCell</string>
+            <key>label</key><string>Select Date Color</string>
+            <key>color_defaults</key><string>com.brycedev.convos</string>
+            <key>color_key</key><string>kDateLabelColor</string>
+            <key>title</key><string>Date Color</string>
+            <key>color_fallback</key><string>#000</string>
+            <key>usesRGB</key><true/>
+            <key>usesAlpha</key><false/>
+            <key>color_postNotification</key><string>com.brycedev.convos/prefsChanged</string>
+        </dict>
+		
+		<!-- UNREAD IMAGE -->
+		
+		<dict>
+			<key>cell</key><string>PSGroupCell</string>
+			<key>label</key><string>Unread Indicator</string>
+            <key>footerText</key><string></string>
+		</dict>
+		<dict>
+			<key>cell</key><string>PSSwitchCell</string>
+			<key>default</key><false/>
+			<key>defaults</key><string>com.brycedev.convos</string>
+			<key>key</key><string>kUseCustomUnreadColor</string>
+			<key>label</key><string>Custom Indicator Color</string>
+			<key>PostNotification</key><string>com.brycedev.convos/prefsChanged</string>
+		</dict>
+		<dict>
+            <key>cell</key><string>PSLinkCell</string>
+            <key>cellClass</key><string>PFColorCell</string>
+            <key>label</key><string>Select Indicator Color</string>
+            <key>color_defaults</key><string>com.brycedev.convos</string>
+            <key>color_key</key><string>kUnreadImageColor</string>
+            <key>title</key><string>Indicator Color</string>
+            <key>color_fallback</key><string>#000</string>
+            <key>usesRGB</key><true/>
+            <key>usesAlpha</key><false/>
+            <key>color_postNotification</key><string>com.brycedev.convos/prefsChanged</string>
+        </dict>
+	</array>
+	<key>title</key>
+	<string>Interface Options</string>
+</dict>
+</plist>

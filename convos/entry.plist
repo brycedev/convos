@@ -1,0 +1,10 @@
+{
+    entry = {
+	bundle = Convos;
+	cell = PSLinkCell;
+	detail = ConvosListController;
+	icon = Icon.png;
+	isController = 1;
+	label = Convos;
+    };
+}
